@@ -35,6 +35,7 @@ export default function App() {
             placeholder="Name"
             value={userName}
             onChange={handleUserName}
+            required
           />
           <br />
 
@@ -46,6 +47,7 @@ export default function App() {
             id=""
             placeholder="password"
             onChange={handlePassword}
+            required
           />
           <br />
           <input type="submit" value="submit" />
