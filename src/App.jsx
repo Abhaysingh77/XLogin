@@ -24,12 +24,12 @@ export default function App() {
   return (
     <div className="App">
       <h2>Login Page</h2>
-      {showError && <p>Invalid username and password</p>}
+      {showError && <p>Invalid username or password</p>}
       {showLoginPage ? (
-        <p>Welcome User!</p>
+        <p>Welcome, user</p>
       ) : (
         <form onSubmit={handleSubmit}>
-          <label htmlFor="">User Name </label>
+          <label htmlFor="">Username</label>
           <input
             type="text"
             placeholder="Name"
